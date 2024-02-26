@@ -13,11 +13,6 @@ server:
 spring:
   application:
     name: ${campus.name}
-  task:
-	  scheduling:
-	    pool:
-		  # 最大线程数，默认是 1
-		  size: 10
   profiles:
     active: @profiles.active@
   # 文件上传
