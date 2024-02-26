@@ -48,10 +48,10 @@ public class CampusIMTTask {
      * 9点期间，每分钟执行一次
      */
     @Async
-    @Scheduled(cron = "0 * * ? * *")
+    @Scheduled(cron = "0 * * * * *")
     public void reservationBatchTask() {
-        logger.info("「预约」开始预约  ");
-        imtService.reservationBatch();
+        logger.warning("「预约」开始预约  ");
+        # imtService.reservationBatch();
 
     }
 
