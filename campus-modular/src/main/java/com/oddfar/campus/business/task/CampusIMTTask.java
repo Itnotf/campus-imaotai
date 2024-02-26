@@ -13,6 +13,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 /**
  * i茅台定时任务
  */
+@Component
 @Configuration
 @EnableScheduling
 public class CampusIMTTask {
