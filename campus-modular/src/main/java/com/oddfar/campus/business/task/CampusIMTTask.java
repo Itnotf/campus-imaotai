@@ -50,7 +50,7 @@ public class CampusIMTTask {
     @Async
     @Scheduled(cron = "0 * * * * *")
     public void reservationBatchTask() {
-        logger.warning("「预约」开始预约  ");
+        logger.warn("「预约」开始预约  ");
         // imtService.reservationBatch();
 
     }
