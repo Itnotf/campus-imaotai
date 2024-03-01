@@ -66,7 +66,7 @@ public interface IUserMapper extends BaseMapperX<IUser> {
         );
     }
 
-    @Update("UPDATE i_user SET `minute` = (SELECT FLOOR(RAND() * 50 + 1)) WHERE random_minute = \"0\"")
+    @Update("UPDATE i_user SET `minute` = (SELECT FLOOR(RAND() * 20 + 30)) WHERE random_minute = \"0\"")
     void updateUserMinuteBatch();
 
     @Update("SET @row_number = 0;\n" +
