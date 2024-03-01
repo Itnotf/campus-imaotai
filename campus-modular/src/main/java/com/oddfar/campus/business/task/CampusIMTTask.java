@@ -40,7 +40,7 @@ public class CampusIMTTask {
     @Async
     @Scheduled(cron = "0 0/1 11 ? * *")
     public void getTravelRewardBatch() {
-        imtService.getTravelRewardBatch();
+        //imtService.getTravelRewardBatch();
 
     }
 
